@@ -1,0 +1,49 @@
+.form {
+  padding: 1.5em;
+  width: auto;
+  height: fit-content;
+  background-color: var(--primary-color);
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.form,
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.requiredField {
+  color: var(--senary-color);
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+/* TABLET */
+@media screen and (min-width: 451px) and (max-width: 760px) {
+}
+
+/* DESCKTOP */
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+  .section {
+    flex-direction: row;
+  }
+  .form {
+    padding: 2em;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .section {
+    flex-direction: row;
+  }
+  .form {
+    gap: 15px;
+    padding: 2em;
+  }
+  .row {
+    flex-direction: row;
+    gap: 12px;
+  }
+}

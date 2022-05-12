@@ -1,0 +1,141 @@
+.form {
+  height: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+  color: var(--text-color);
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  text-align: left;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form .formContainer {
+  height: 100%;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.field {
+  font-weight: 600;
+}
+.data {
+  font-weight: 400;
+}
+.packs {
+  height: 12rem;
+  padding: 10px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+.icon {
+  height: 10px;
+  margin-bottom: 2px;
+  color: rgb(100, 100, 100);
+}
+.guion {
+  border-top: 1px solid var(--text-color);
+  width: 25px;
+  height: 8px;
+  display: inline-block;
+}
+.emptyDate {
+  font-weight: 100;
+  transform: scaleX(1.4);
+}
+.date,
+.emptyDate {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+.iconDetails {
+  width: 24px;
+  padding-right: 10px;
+}
+.line {
+  font-weight: 100;
+  color: #656565;
+}
+.buttonContainer {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-self: flex-end;
+}
+.button {
+  background-color: var(--tertiary-color);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-bg-color);
+  height: 55px;
+  width: 140px;
+  padding: 12px;
+  border: 1px solid var(--text-color);
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 3px 3px 0px 0px var(--box-shadow-color);
+}
+.button:hover {
+  background-color: var(--quinary-color);
+  color: #000000;
+  transition: 0.2s ease;
+}
+.button.fill {
+  background-color: #000000;
+  box-shadow: 3px 3px 0px 0px #000000;
+  border: 1px solid #000000;
+  color: #ffffff;
+  box-shadow: none;
+  margin-bottom: -3px;
+  margin-right: -3px;
+}
+
+/* ----Error messages---- */
+.errorMessages,
+.hideErrorMessages {
+  padding: 10px;
+  height: 98px;
+  display: flex;
+  background-color: rgb(255, 232, 232);
+  border: 1px solid rgb(255, 96, 96);
+}
+.hideErrorMessages {
+  visibility: hidden;
+}
+.showErrorMessage,
+.hideErrorMessage {
+  color: red;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 5px 0px;
+}
+.hideErrorMessage {
+  display: none;
+}
+.iconAlert {
+  color: red;
+  font-size: 40px;
+  align-self: center;
+  padding-right: 15px;
+  vertical-align: middle;
+}
+.buttonAndErrorMessages {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

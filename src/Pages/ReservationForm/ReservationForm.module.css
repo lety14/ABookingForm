@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.app {
+  width: auto;
+  position: relative;
+}
+.app {
+  background: var(--main-bg-color);
+}
+h2 {
+  color: var(--text-color);
+}
+
+/* ----Colors---- */
+/* Light */
+.bodyLight {
+  --main-bg-color: rgb(233, 243, 243);
+  --text-color: rgb(0, 0, 0);
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: rgb(241, 244, 251);
+  --tertiary-color: rgb(188, 182, 255);
+  --quaternary-color: rgb(230, 230, 249);
+  --quinary-color: rgb(245, 245, 245);
+  --senary-color: rgb(155, 155, 155);
+  --underline-color: rgb(219, 215, 255);
+  --box-shadow-color: rgba(0, 0, 0, 0.1);
+}
+/* Dark */
+.bodyDark {
+  --main-bg-color: rgb(57, 31, 70);
+  --text-color: rgb(255, 255, 255);
+  --primary-color: rgb(0, 0, 0);
+  --secondary-color: rgb(23, 12, 52);
+  --tertiary-color: rgb(214, 211, 247);
+  --quaternary-color: rgb(115, 100, 210);
+  --quinary-color: rgb(255, 255, 255);
+  --senary-color: rgb(217, 212, 220);
+  --underline-color: rgb(61, 51, 128);
+  --box-shadow-color: rgba(255, 255, 255, 0.7);
+}
+
+/* ----HEADER---- */
+.header {
+  /* height: 250px; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+}
+.header .placeTitle {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-shadow: 2px 2px var(--box-shadow-color);
+}
+.header h1 {
+  font-size: 25px;
+}
+.header .darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  transform: scale(0.8);
+}
+
+/* ----MAIN---- */
+.main {
+  display: flex;
+  justify-content: center;
+  padding: 20px 10px 80px 10px;
+  height: 100%;
+}
+.sections {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.subsection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.details .subsection {
+  height: 100%;
+}
+.subsection h2 {
+  font-size: 20px;
+}
+
+.calendar {
+  display: none;
+}
+.form,
+.details {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+/* ----FOOTER---- */
+.imgFooterMobile,
+.imgFooter {
+  width: 100%;
+}
+.bodyDark .imgFooterMobile,
+.bodyDark .imgFooter {
+  opacity: 0.7;
+}
+.imgFooter {
+  display: none;
+}
+.footer {
+  position: relative;
+  z-index: 20;
+}
+
+/* ********************** TABLET ********************** */
+@media screen and (min-width: 451px) and (max-width: 760px) {
+  .header h1 {
+    font-size: 30px;
+  }
+}
+
+/* ********************** DESKTOP ********************** */
+
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+  .darkModeToggle {
+    top: 30px;
+    right: 30px;
+    transform: scale(1);
+  }
+  .header h1 {
+    font-size: 30px;
+  }
+
+  /* ----MAIN---- */
+  .main {
+    padding: 10px 10px 50px 10px;
+  }
+  .sections {
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 700px;
+    max-width: 900px;
+  }
+  .details,
+  .form {
+    height: 100%;
+  }
+  .form {
+    min-width: 300px;
+    max-width: 400px;
+  }
+  .subsection h2 {
+    font-size: 22px;
+  }
+  .details {
+    height: 100%;
+    min-width: 300px;
+    max-width: 350px;
+  }
+
+  /* ----FOOTER---- */
+  .imgFooterMobile {
+    display: none;
+  }
+  .imgFooter {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  /* ----HEADER---- */
+  .darkModeToggle {
+    top: 30px;
+    right: 30px;
+    transform: scale(1);
+  }
+  .header {
+    padding: 90px 10px;
+  }
+  .header h1 {
+    font-size: 35px;
+  }
+
+  /* ----MAIN---- */
+  .main {
+    padding: 0px 50px 150px 50px;
+  }
+  .sections {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    gap: 50px;
+    min-width: 900px;
+    max-width: 1100px;
+  }
+  .details,
+  .form {
+    height: 100%;
+  }
+  .subsection h2 {
+    font-size: 22px;
+  }
+  .calendar {
+    display: contents;
+  }
+  .calendarMobile {
+    display: none;
+  }
+  .form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .details {
+    min-width: 400px;
+    max-width: 500px;
+    height: 100%;
+  }
+
+  /* ----FOOTER---- */
+  .imgFooterMobile {
+    display: none;
+  }
+  .imgFooter {
+    display: block;
+    width: 100%;
+  }
+}

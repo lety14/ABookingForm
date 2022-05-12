@@ -1,0 +1,76 @@
+.card {
+  background-color: var(--primary-color);
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+  padding: 20px;
+  color: var(--text-color);
+}
+.card:hover {
+  background-color: var(--secondary-color);
+}
+.title {
+  font-size: 20px;
+}
+.price {
+  font-size: 14px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0;
+  height: 18px;
+  width: 18px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px 0px var(--box-shadow-color);
+  border: 1px solid var(--box-shadow-color);
+  background-color: var(--quinary-color);
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: var(--tertiary-color);
+  border: none;
+  box-shadow: 1px 1px 0px 0px var(--box-shadow-color);
+}
+.card.checkedCard {
+  background-color: var(--quaternary-color);
+  border: 1px solid #d5d3eb;
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+}
+.container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+.container .checkmark:after {
+  left: 5.5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--primary-color);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

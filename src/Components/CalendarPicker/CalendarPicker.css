@@ -1,0 +1,154 @@
+.react-datepicker {
+  font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+  font-size: 0.8rem;
+  background-color: var(--primary-color);
+  box-shadow: 6px 6px 0px 0px var(--box-shadow-color);
+  color: #000;
+  border: none;
+  border-radius: 0%;
+  display: flex;
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+}
+
+.react-datepicker__navigation:hover *::before {
+  border-color: var(--secondary-color);
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  color: var(--text-color);
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.25rem;
+}
+
+.react-datepicker__day--today {
+  font-weight: normal;
+}
+.react-datepicker__navigation.react-datepicker__navigation--previous,
+.react-datepicker__navigation.react-datepicker__navigation--next {
+  top: 15px;
+}
+.react-datepicker__header {
+  text-align: center;
+  background-color: transparent;
+  border-bottom: 1px solid var(--senary-color);
+  border-top-left-radius: 0px;
+  padding: 8px 0px;
+  position: relative;
+}
+.react-datepicker__current-month,
+.react-datepicker-year-header {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.react-datepicker__month-container {
+  width: 100%;
+  padding: 10px;
+}
+.react-datepicker__month {
+  margin: 0.4rem;
+  text-align: center;
+}
+.react-datepicker__month .react-datepicker__month-text,
+.react-datepicker__month .react-datepicker__quarter-text {
+  display: inline-block;
+  width: 4rem;
+  margin: 2px;
+  text-transform: uppercase;
+}
+.react-datepicker__day:hover {
+  border-radius: 50%;
+  color: #000000;
+  font-weight: 600;
+  background-color: #f0f0f0;
+}
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__day--keyboard-selected.react-datepicker__day--range-end {
+  border-radius: 50%;
+  background-color: var(--tertiary-color);
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: var(--text-dark-color);
+}
+.react-datepicker__day--selected:hover,
+.react-datepicker__day--in-selecting-range:hover,
+.react-datepicker__day--in-range:hover,
+.react-datepicker__day--keyboard-selected.react-datepicker__day--range-end:hover {
+  background-color: var(--secondary-color);
+}
+.react-datepicker__day--keyboard-selected {
+  border-radius: 0.3rem;
+  background-color: var(--tertiary-color);
+  color: var(--text-dark-color);
+}
+.react-datepicker__day--keyboard-selected:hover {
+  background-color: var(--tertiary-color);
+}
+.react-datepicker__day--in-selecting-range:not(.react-datepicker__day--in-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--in-range) {
+  background-color: var(--tertiary-color);
+}
+.react-datepicker__portal .react-datepicker__current-month {
+  font-size: 1.44rem;
+  text-transform: uppercase;
+}
+.react-datepicker__day-name {
+  font-size: 0rem;
+}
+.react-datepicker__day-name::first-letter {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.react-datepicker__day--outside-month {
+  visibility: hidden;
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: transparent;
+  color: var(--text-color);
+}
+.react-datepicker__day--disabled {
+  cursor: default;
+  color: #ccc;
+}
+.react-datepicker__day--disabled:hover {
+  background-color: transparent;
+  color: #ccc;
+  font-weight: 400;
+}
+
+/* TABLET*/
+@media screen and (min-width: 451px) and (max-width: 760px) {
+  .react-datepicker {
+    min-height: 365px;
+  }
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__time-name {
+    margin: 0.5rem;
+  }
+}
+
+/* DESKTOP*/
+@media screen and (min-width: 761px) and (max-width: 1200px) {
+  .react-datepicker {
+    min-height: 365px;
+  }
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__time-name {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+}
