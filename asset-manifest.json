@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ABookingForm/static/css/main.238dc254.css",
+    "main.js": "/ABookingForm/static/js/main.ffbda701.js",
+    "static/media/success.gif": "/ABookingForm/static/media/success.30ae39232945ec9346c8.gif",
+    "static/media/background_footer.svg": "/ABookingForm/static/media/background_footer.e29e9583334b480bfa365416bce6164b.svg",
+    "static/media/worldwide.svg": "/ABookingForm/static/media/worldwide.06482400c9c91c247dde.svg",
+    "static/media/background_footer_mobile.svg": "/ABookingForm/static/media/background_footer_mobile.0e597a87385dbc170cd5e6c464623fdf.svg",
+    "static/media/success.png": "/ABookingForm/static/media/success.89ac5b0cca03390c2ff4.png",
+    "static/media/ticket.svg": "/ABookingForm/static/media/ticket.9d4af3e9951532474e2c.svg",
+    "index.html": "/ABookingForm/index.html",
+    "main.238dc254.css.map": "/ABookingForm/static/css/main.238dc254.css.map",
+    "main.ffbda701.js.map": "/ABookingForm/static/js/main.ffbda701.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.238dc254.css",
+    "static/js/main.ffbda701.js"
+  ]
+}
