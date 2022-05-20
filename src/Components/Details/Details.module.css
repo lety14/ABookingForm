@@ -109,7 +109,7 @@
 .errorMessages,
 .hideErrorMessages {
   padding: 10px;
-  height: 98px;
+  /* height: 98px; */
   display: flex;
   background-color: rgb(255, 232, 232);
   border: 1px solid rgb(255, 96, 96);

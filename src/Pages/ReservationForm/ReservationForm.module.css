@@ -59,6 +59,7 @@ h2 {
 }
 .header h1 {
   font-size: 25px;
+  color: var(--text-color);
 }
 .header .darkModeToggle {
   position: absolute;
@@ -137,7 +138,7 @@ h2 {
 /* ********************** DESKTOP ********************** */
 
 @media screen and (min-width: 761px) and (max-width: 1200px) {
-  .darkModeToggle {
+  .header .darkModeToggle {
     top: 30px;
     right: 30px;
     transform: scale(1);
@@ -189,7 +190,7 @@ h2 {
 
 @media screen and (min-width: 1201px) {
   /* ----HEADER---- */
-  .darkModeToggle {
+  .header .darkModeToggle {
     top: 30px;
     right: 30px;
     transform: scale(1);
